@@ -45,7 +45,7 @@ while finished != True:
             number, dice = item.split('d')
             loop = int(number)
             while loop > 0:
-                ran_num += int(random.randint(1,int(dice)))
+                ran_num += int(random.randint(1,int(dice+1)))
                 loop -= 1
             d_list.append(ran_num)     
         elif "+" in item or "-" in item:
